@@ -1,4 +1,3 @@
-<!-- views/applications/new.ejs -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,8 +9,6 @@
   <body>
     <%- include('../partials/_navbar.ejs') %>
     <h1>Add a New App</h1>
-    <!-- views/applications/new.ejs -->
-
 <form action="/users/<%= user._id %>/applications" method="POST">
   <label for="company">Company:</label>
   <input type="text" name="company" id="company" />

@@ -16,13 +16,9 @@
     <a href="<%= application.postingLink %>">Visit this job posting</a>
     <% } %>
     <p>The status of this application is: <%= application.status %></p>
-
-    <!-- Add the following link -->
     <a href="/users/<%= user._id %>/applications/<%= application._id %>/edit">
       Edit this application
     </a>
-    <!--  -->
-
     <form
       action="/users/<%= user._id %>/applications/<%= application._id %>?_method=DELETE"
       method="POST"
